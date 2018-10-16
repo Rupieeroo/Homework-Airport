@@ -9,5 +9,12 @@ describe Takeaway do
     })
   end
 
-  it ''
+  it 'allows me to order a takeaway' do
+    # V JUST NOTICED THAT I'M AN IDIOT V
+    expect(subject.order(0, 1)).to eq ['Cheese Burger', 9]
+  end
+
+  it 'allows me to order several takeaway items' do
+    expect(subject.order(1, 2))
+  end
 end
